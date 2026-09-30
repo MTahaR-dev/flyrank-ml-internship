@@ -1,0 +1,141 @@
+{
+  "baseline_version": "w04_v1",
+  "lane": "Lane 2: Refresh / Content Opportunity Scoring",
+  "warehouse_revision": "50cbf7c3909d07be4d1b5906b4d09e882e5acbf2",
+  "month": "2026-03",
+  "decision_date": "2026-03-18",
+  "feature_window": [
+    "2026-03-01",
+    "2026-03-14"
+  ],
+  "outcome_window": [
+    "2026-03-18",
+    "2026-03-31"
+  ],
+  "target": "outcome impressions < 0.8 * feature impressions; 14 valid days per window",
+  "input_names": [
+    "feature_impressions",
+    "prior_week_change_pct"
+  ],
+  "rule_min_impressions": 300,
+  "rule_max_prior_change_pct": -20.0,
+  "score_formula": "log1p(feature_impressions) * (-prior_week_change_pct / 100) when both gates pass; else 0",
+  "reason_code": "visible_prior_week_decline",
+  "action": "review_for_possible_refresh",
+  "past_only_scoring_pages": 60534,
+  "labeled_pages": 57459,
+  "queue_pages": 14853,
+  "queue_clients": 28,
+  "development_pages": 14070,
+  "test_pages": 43389,
+  "split_seed": 42,
+  "holdout_client_fraction": 0.25,
+  "train_clients": [
+    "client_0797ff3a1fc9a6a5",
+    "client_08a6a72ff48e62c0",
+    "client_08d2847f24cf89c1",
+    "client_0e1acc6cd57b0eba",
+    "client_0fa64a184f18a4a0",
+    "client_157ffe4d4a595515",
+    "client_1a730cb2640a1abf",
+    "client_20259bd6705d81d4",
+    "client_2b4306c3ed003f01",
+    "client_3197e6291363b4db",
+    "client_3f0ce4d44fe94f3d",
+    "client_3ffa76342f366962",
+    "client_400c21c81c8b46ef",
+    "client_65de48885f4ef01b",
+    "client_795153d5b7850ccf",
+    "client_9958f0a7ae1df715",
+    "client_a2eeb8899886adde",
+    "client_a80fca3f171ed1de",
+    "client_b10cb2997d0c7c86",
+    "client_c182d11e4862a37d",
+    "client_d211cb07b9059bab",
+    "client_def0955f7a377868",
+    "client_e5c2aa26a8598242",
+    "client_ff644d8251367cbb"
+  ],
+  "test_clients": [
+    "client_2094c6eb080311d5",
+    "client_23a62021009f63c4",
+    "client_62f4a7e64f5e0096",
+    "client_73cda7b4e4f265ea",
+    "client_ccdd78843409c8c7",
+    "client_cd12bcfd98942aa1",
+    "client_f623b01661d4bfe4",
+    "client_fef1a8f436438636"
+  ],
+  "test_population_sha256": "4b4eb9bad6a2d0c70f503f1c027ccdf3b9243af7d7c0d20296fb4c0c0df3a042",
+  "test_page_base_rate": 0.38249325866002903,
+  "metric_k": 20,
+  "metric_clients": 7,
+  "small_test_clients_excluded": 1,
+  "mean_client_precision_at_20": 0.6142857142857144,
+  "expected_random_mean_client_precision_at_20": 0.39809780809531503,
+  "positive_score_top20_slots": 119,
+  "total_top20_slots": 140,
+  "volume_verdict": "MIXED",
+  "prior_change_verdict": "CONFIRMED",
+  "volume_audit": [
+    {
+      "volume_bucket": "100-299",
+      "n": 4825,
+      "positives": 1446,
+      "clients": 24,
+      "decline_rate": 0.29968911917098445,
+      "equal_client_decline_rate": 0.31623894815941983
+    },
+    {
+      "volume_bucket": "300-999",
+      "n": 5342,
+      "positives": 1713,
+      "clients": 20,
+      "decline_rate": 0.32066641707225757,
+      "equal_client_decline_rate": 0.42911430239827675
+    },
+    {
+      "volume_bucket": "1000-2999",
+      "n": 2583,
+      "positives": 866,
+      "clients": 18,
+      "decline_rate": 0.33526906697638403,
+      "equal_client_decline_rate": 0.43229369429621173
+    },
+    {
+      "volume_bucket": "3000+",
+      "n": 1320,
+      "positives": 432,
+      "clients": 15,
+      "decline_rate": 0.32727272727272727,
+      "equal_client_decline_rate": 0.34834694102848046
+    }
+  ],
+  "prior_change_audit": [
+    {
+      "prior_change_bucket": "down <= -20%",
+      "n": 5080,
+      "positives": 1937,
+      "clients": 22,
+      "decline_rate": 0.3812992125984252,
+      "equal_client_decline_rate": 0.40403171489040807
+    },
+    {
+      "prior_change_bucket": "between -20% and +20%",
+      "n": 4959,
+      "positives": 1577,
+      "clients": 22,
+      "decline_rate": 0.31800766283524906,
+      "equal_client_decline_rate": 0.30104005073832635
+    },
+    {
+      "prior_change_bucket": "up > +20%",
+      "n": 4031,
+      "positives": 943,
+      "clients": 22,
+      "decline_rate": 0.2339369883403622,
+      "equal_client_decline_rate": 0.29720464893209453
+    }
+  ],
+  "limitation": "One March cutoff and complete-case retrospective labels; no causal refresh-benefit estimate."
+}
