@@ -1,0 +1,15 @@
+# Analysis environment used by the executed capstone notebook (Python 3.12).
+duckdb==1.4.3
+numpy==2.3.5
+pandas==3.0.1
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.5.2
+threadpoolctl==3.6.0
+# The figure renderer was verified with this version in Python 3.14.
+matplotlib==3.11.1
+# Notebook execution and secure, gated data access.
+nbformat==5.10.4
+nbclient==0.11.0
+ipykernel==7.3.0
+huggingface_hub>=0.24

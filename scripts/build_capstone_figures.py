@@ -21,12 +21,18 @@ def build_figures(repo):
         "axes.titleweight": "bold", "axes.labelcolor": "#253746",
         "text.color": "#253746", "xtick.color": "#253746", "ytick.color": "#253746",
         "figure.facecolor": "white", "axes.facecolor": "white", "svg.fonttype": "none",
+        "svg.hashsalt": "flyrank-capstone",
     })
 
     def finish(fig, name, note):
         fig.text(0.09, 0.055, note, fontsize=9, color="#536575", va="bottom")
         for extension in ["png", "svg"]:
-            fig.savefig(folder / f"{name}.{extension}", dpi=170, facecolor="white")
+            path = folder / f"{name}.{extension}"
+            metadata = {"Date": None} if extension == "svg" else None
+            fig.savefig(path, dpi=170, facecolor="white", metadata=metadata)
+            if extension == "svg":
+                path.write_text("\n".join(line.rstrip() for line in path.read_text(encoding="utf-8").splitlines())
+                                + "\n", encoding="utf-8")
         plt.close(fig)
 
     # Identical seven-client evaluation population for both rankings.
