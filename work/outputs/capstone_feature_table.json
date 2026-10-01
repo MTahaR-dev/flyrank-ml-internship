@@ -1,0 +1,58 @@
+{
+  "step": "five-feature table; model training pending",
+  "warehouse_revision": "50cbf7c3909d07be4d1b5906b4d09e882e5acbf2",
+  "month": "2026-03",
+  "decision_date": "2026-03-18",
+  "feature_window": [
+    "2026-03-01",
+    "2026-03-14"
+  ],
+  "outcome_window": [
+    "2026-03-18",
+    "2026-03-31"
+  ],
+  "minimum_feature_impressions": 100,
+  "required_days_per_window": 14,
+  "feature_names": [
+    "log_impressions",
+    "log_clicks",
+    "ctr_pct",
+    "weighted_position",
+    "prior_week_change_pct"
+  ],
+  "past_only_pages": 60534,
+  "labeled_pages": 57459,
+  "clients": 32,
+  "positive_targets": 21053,
+  "negative_targets": 36406,
+  "pages_without_complete_target": 3075,
+  "quality": [
+    {
+      "feature": "log_impressions",
+      "missing_rows": 0,
+      "distinct_values": 8318
+    },
+    {
+      "feature": "log_clicks",
+      "missing_rows": 0,
+      "distinct_values": 223
+    },
+    {
+      "feature": "ctr_pct",
+      "missing_rows": 0,
+      "distinct_values": 16224
+    },
+    {
+      "feature": "weighted_position",
+      "missing_rows": 0,
+      "distinct_values": 55457
+    },
+    {
+      "feature": "prior_week_change_pct",
+      "missing_rows": 0,
+      "distinct_values": 39897
+    }
+  ],
+  "identity_and_target_sha256": "bbfe831aeea397bc42d63e3eea5d1068d3fadfdfd03b85b069f2529de15b7581",
+  "notes": "Targets and IDs are separate from X. Missing position stays missing until train-only preprocessing. March complete-case slice; historical ingestion times unknown."
+}
