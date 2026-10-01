@@ -1,0 +1,68 @@
+{
+  "model": "LogisticRegression",
+  "execution_source": "capstone.ipynb",
+  "model_parameters": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 1000,
+    "multi_class": "deprecated",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "python_version": "3.12.14",
+  "sklearn_version": "1.7.2",
+  "feature_names": [
+    "log_impressions",
+    "log_clicks",
+    "ctr_pct",
+    "weighted_position",
+    "prior_week_change_pct"
+  ],
+  "test_population_sha256": "4b4eb9bad6a2d0c70f503f1c027ccdf3b9243af7d7c0d20296fb4c0c0df3a042",
+  "training_pages": 14070,
+  "test_pages": 43389,
+  "primary_metric": "mean client Precision@20",
+  "training_cross_validation": {
+    "method": "4-fold GroupKFold by client",
+    "precision_at_20": 0.63125,
+    "expected_random_precision_at_20": 0.40409148623240654,
+    "roc_auc": 0.5729478869027411
+  },
+  "test_comparison": [
+    {
+      "method": "Logistic regression",
+      "precision_at_20_pct": 60.71428571428573,
+      "roc_auc": 0.6418846409279206
+    },
+    {
+      "method": "Week 4 rule",
+      "precision_at_20_pct": 61.428571428571445,
+      "roc_auc": 0.563791643290202
+    }
+  ],
+  "test_expected_random_precision_at_20": 0.39809780809531503,
+  "eligible_test_clients": 7,
+  "standardized_feature_weights": {
+    "log_impressions": 0.5597348559766213,
+    "log_clicks": -0.7439279896856776,
+    "ctr_pct": 0.1806023802707147,
+    "weighted_position": 0.07913720354322859,
+    "prior_week_change_pct": -0.5507717225448158
+  },
+  "limitations": [
+    "One March decision window, not a future-month evaluation.",
+    "Test outcomes were previously examined in weekly assignments.",
+    "Complete later coverage is required for evaluation.",
+    "Decline prediction does not establish refresh benefit.",
+    "Probability calibration has not been evaluated."
+  ]
+}
