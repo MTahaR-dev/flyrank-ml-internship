@@ -1,0 +1,221 @@
+{
+  "decision_date": "2026-03-18",
+  "feature_window": [
+    "2026-03-01",
+    "2026-03-14"
+  ],
+  "action_method": "Frozen Week 4 rule; model did not beat primary metric",
+  "rule_min_impressions": 300,
+  "rule_max_prior_change_pct": -20.0,
+  "reason_code": "visible_prior_week_decline",
+  "action": "review_for_possible_refresh",
+  "past_only_pages": 60534,
+  "queue_pages": 14853,
+  "queue_clients": 28,
+  "top20_clients": 3,
+  "largest_client_top20_count": 16,
+  "past_only_no_future_join": true,
+  "review_type": "Past numeric evidence, not article inspection",
+  "recommendations": [
+    {
+      "rank": 1,
+      "recommendation": "Recommendation 01",
+      "client_alias": "Queue client 1",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "83,770 past impressions; week 1 83,741 to week 2 29 (-100.0%); score 11.332",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "Only 29 second-week impressions: verify reporting and demand first; No observed past clicks: inspect click measurement and search intent before editing; The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 2,
+      "recommendation": "Recommendation 02",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "67,555 past impressions; week 1 63,592 to week 2 3,963 (-93.8%); score 10.428",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 3,
+      "recommendation": "Recommendation 03",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "44,156 past impressions; week 1 42,394 to week 2 1,762 (-95.8%); score 10.251",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 4,
+      "recommendation": "Recommendation 04",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "24,427 past impressions; week 1 24,349 to week 2 78 (-99.7%); score 10.071",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "Only 78 second-week impressions: verify reporting and demand first; No observed past clicks: inspect click measurement and search intent before editing; The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 5,
+      "recommendation": "Recommendation 05",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "35,924 past impressions; week 1 34,036 to week 2 1,888 (-94.5%); score 9.907",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 6,
+      "recommendation": "Recommendation 06",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "11,932 past impressions; week 1 11,828 to week 2 104 (-99.1%); score 9.305",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "No observed past clicks: inspect click measurement and search intent before editing; The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 7,
+      "recommendation": "Recommendation 07",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "22,345 past impressions; week 1 20,458 to week 2 1,887 (-90.8%); score 9.091",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 8,
+      "recommendation": "Recommendation 08",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "15,510 past impressions; week 1 14,655 to week 2 855 (-94.2%); score 9.086",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 9,
+      "recommendation": "Recommendation 09",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "12,231 past impressions; week 1 11,736 to week 2 495 (-95.8%); score 9.015",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 10,
+      "recommendation": "Recommendation 10",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "8,962 past impressions; week 1 8,762 to week 2 200 (-97.7%); score 8.893",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "No observed past clicks: inspect click measurement and search intent before editing; The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 11,
+      "recommendation": "Recommendation 11",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "10,240 past impressions; week 1 9,625 to week 2 615 (-93.6%); score 8.644",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 12,
+      "recommendation": "Recommendation 12",
+      "client_alias": "Queue client 1",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "9,054 past impressions; week 1 8,504 to week 2 550 (-93.5%); score 8.522",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 13,
+      "recommendation": "Recommendation 13",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "7,916 past impressions; week 1 7,507 to week 2 409 (-94.6%); score 8.488",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 14,
+      "recommendation": "Recommendation 14",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "7,436 past impressions; week 1 7,044 to week 2 392 (-94.4%); score 8.418",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 15,
+      "recommendation": "Recommendation 15",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "6,894 past impressions; week 1 6,550 to week 2 344 (-94.7%); score 8.374",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 16,
+      "recommendation": "Recommendation 16",
+      "client_alias": "Queue client 1",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "5,916 past impressions; week 1 5,651 to week 2 265 (-95.3%); score 8.278",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "No observed past clicks: inspect click measurement and search intent before editing; The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 17,
+      "recommendation": "Recommendation 17",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "35,296 past impressions; week 1 29,098 to week 2 6,198 (-78.7%); score 8.241",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "Demand, seasonality, or an intentional page change could explain the fall without a refresh need"
+    },
+    {
+      "rank": 18,
+      "recommendation": "Recommendation 18",
+      "client_alias": "Queue client 3",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "6,585 past impressions; week 1 6,168 to week 2 417 (-93.2%); score 8.198",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "The near-collapse could reflect tracking or indexation rather than stale content"
+    },
+    {
+      "rank": 19,
+      "recommendation": "Recommendation 19",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "25,349 past impressions; week 1 21,222 to week 2 4,127 (-80.6%); score 8.169",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "Demand, seasonality, or an intentional page change could explain the fall without a refresh need"
+    },
+    {
+      "rank": 20,
+      "recommendation": "Recommendation 20",
+      "client_alias": "Queue client 2",
+      "action": "Investigate; refresh only if content review supports it",
+      "reason_code": "visible_prior_week_decline",
+      "why_here": "11,491 past impressions; week 1 10,193 to week 2 1,298 (-87.3%); score 8.159",
+      "confidence_note": "Directional; causes and refresh benefit unverified",
+      "what_would_make_it_wrong": "Demand, seasonality, or an intentional page change could explain the fall without a refresh need"
+    }
+  ]
+}

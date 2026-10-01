@@ -1,0 +1,82 @@
+{
+  "test_comparison": [
+    {
+      "method": "Logistic regression",
+      "precision_at_20_pct": 60.71428571428573,
+      "roc_auc": 0.6418846409279206
+    },
+    {
+      "method": "Week 4 rule",
+      "precision_at_20_pct": 61.428571428571445,
+      "roc_auc": 0.563791643290202
+    }
+  ],
+  "expected_random_precision_at_20_pct": 39.8097808095315,
+  "eligible_test_clients": 7,
+  "test_client_results": [
+    {
+      "client_alias": "Client 1",
+      "pages": 180,
+      "random_expected_precision_at_20_pct": 34.44444444444444,
+      "model_precision_at_20_pct": 45.0,
+      "rule_precision_at_20_pct": 20.0,
+      "model_minus_rule_percentage_points": 25.0
+    },
+    {
+      "client_alias": "Client 2",
+      "pages": 9674,
+      "random_expected_precision_at_20_pct": 45.513748191027496,
+      "model_precision_at_20_pct": 65.0,
+      "rule_precision_at_20_pct": 60.0,
+      "model_minus_rule_percentage_points": 5.0
+    },
+    {
+      "client_alias": "Client 3",
+      "pages": 12083,
+      "random_expected_precision_at_20_pct": 40.60249937929322,
+      "model_precision_at_20_pct": 85.0,
+      "rule_precision_at_20_pct": 100.0,
+      "model_minus_rule_percentage_points": -15.0
+    },
+    {
+      "client_alias": "Client 4",
+      "pages": 15502,
+      "random_expected_precision_at_20_pct": 38.09185911495291,
+      "model_precision_at_20_pct": 70.0,
+      "rule_precision_at_20_pct": 90.0,
+      "model_minus_rule_percentage_points": -20.0
+    },
+    {
+      "client_alias": "Client 5",
+      "pages": 43,
+      "random_expected_precision_at_20_pct": 34.883720930232556,
+      "model_precision_at_20_pct": 45.0,
+      "rule_precision_at_20_pct": 35.0,
+      "model_minus_rule_percentage_points": 10.0
+    },
+    {
+      "client_alias": "Client 6",
+      "pages": 63,
+      "random_expected_precision_at_20_pct": 63.49206349206349,
+      "model_precision_at_20_pct": 75.0,
+      "rule_precision_at_20_pct": 55.00000000000001,
+      "model_minus_rule_percentage_points": 19.999999999999993
+    },
+    {
+      "client_alias": "Client 7",
+      "pages": 5841,
+      "random_expected_precision_at_20_pct": 21.640130114706384,
+      "model_precision_at_20_pct": 40.0,
+      "rule_precision_at_20_pct": 70.0,
+      "model_minus_rule_percentage_points": -30.0
+    }
+  ],
+  "standardized_feature_weights": {
+    "log_impressions": 0.5597348559766213,
+    "log_clicks": -0.7439279896856776,
+    "ctr_pct": 0.1806023802707147,
+    "weighted_position": 0.07913720354322859,
+    "prior_week_change_pct": -0.5507717225448158
+  },
+  "notes": "Same March evaluation population; anonymous client aggregates; associations, not causation."
+}
